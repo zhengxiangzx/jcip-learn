@@ -1,5 +1,9 @@
 package com.learn.jcip.examples;
 
+/*
+* 模拟产生死锁
+*
+* */
 public class DeadLockDemo {
     private static String A = "A";
     private static String B = "B";
