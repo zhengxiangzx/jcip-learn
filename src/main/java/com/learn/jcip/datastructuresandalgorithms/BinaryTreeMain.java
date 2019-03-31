@@ -1,10 +1,21 @@
 package com.learn.jcip.datastructuresandalgorithms;
 
 public class BinaryTreeMain {
+    private static BinaryTree binaryTree;
+
     public static void main(String[] args) {
-        String[] strings = new String[]{"1", "2", " ", "3", "4", "5", "6", "7"};
-        BinaryTree binaryTree = new BinaryTree();
-        BinaryTreeNode tt = binaryTree.createTree(binaryTree.getRoot(), strings);
-        System.out.println(tt);
+        binaryTree = new BinaryTree();
+        BinaryTreeMain.inOrderTraverse(binaryTree.buildTree());
+    }
+
+    /*
+     *中序遍历 递归的方式
+     * */
+    public static void inOrderTraverse(BinaryTreeNode root) {
+        if (root != null) {
+            inOrderTraverse(root.getLeftChild());
+            System.out.print(root.getData() + " ");
+            inOrderTraverse(root.getRightChild());
+        }
     }
 }

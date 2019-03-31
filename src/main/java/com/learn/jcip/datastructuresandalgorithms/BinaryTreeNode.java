@@ -6,7 +6,9 @@ public class BinaryTreeNode {
     private BinaryTreeNode rightChild;
 
     BinaryTreeNode() {
-
+        this.data = null;
+        this.leftChild = null;
+        this.rightChild = null;
     }
 
     BinaryTreeNode(String data) {
