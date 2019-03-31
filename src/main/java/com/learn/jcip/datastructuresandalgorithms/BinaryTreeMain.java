@@ -1,21 +1,16 @@
 package com.learn.jcip.datastructuresandalgorithms;
 
 public class BinaryTreeMain {
-    private static BinaryTree binaryTree;
+    private static Traversing traversing;
 
     public static void main(String[] args) {
-        binaryTree = new BinaryTree();
-        BinaryTreeMain.inOrderTraverse(binaryTree.buildTree());
+        BinaryTree binaryTree = new BinaryTree();
+        System.out.println("中序遍历-递归模式");
+        traversing = new Traversing();
+        traversing.inOrderTraverse(binaryTree.buildTree());
+        System.out.println("\n中序遍历-非递归模式");
+        traversing.notRecursiveInOrderTraverse(binaryTree.buildTree());
     }
 
-    /*
-     *中序遍历 递归的方式
-     * */
-    public static void inOrderTraverse(BinaryTreeNode root) {
-        if (root != null) {
-            inOrderTraverse(root.getLeftChild());
-            System.out.print(root.getData() + " ");
-            inOrderTraverse(root.getRightChild());
-        }
-    }
+
 }

@@ -14,9 +14,9 @@ public class BinaryTree {
         this.root = root;
     }
 
-    public BinaryTreeNode getRoot() {
-        return root;
-    }
+//    public BinaryTreeNode getRoot() {
+//        return root;
+//    }
 
     //加载数据
     public BinaryTreeNode buildTree() {
