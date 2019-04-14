@@ -19,4 +19,6 @@ BLOCKED | 阻塞状态，表示线程阻塞于锁
 WAITING | 等待状态，表示线程进入了等待状态，进入该状态表示当前线程需要等待其他线程做出一些特定动作（通知或中断）
 TIME_WAITING | 超时等待状态，该状态不同于WAITING状态，它是可以在指定时间自行返回
 TERMINATED | 终止状态，表示当前线程已经执行完毕
-### 
+
+Java线程状态变迁图示：[java线程状态变迁图](https://github.com/zhengxiangzx/tupian/blob/master/java%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E5%8F%98%E8%BF%81%E5%9B%BE.pdf)
+###
